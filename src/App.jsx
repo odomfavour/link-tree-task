@@ -16,15 +16,15 @@ function App() {
         <div className="share-holder">
           <img
             src={desktopShare}
-            alt=""
+            alt="share desktop"
             className="view-desktop"
             role="button"
           />
-          <img src={mobileShare} alt="" className="view-mobile" role="button" />
+          <img src={mobileShare} alt="share mobile" className="view-mobile" role="button" />
         </div>
         <div className="profile-section">
           <div className="image-box">
-            <img src={profPic} alt="" />
+            <img src={profPic} id="profile__img" alt="ogochukwu odom" />
           </div>
           <div className="user-info">
             <h5 id="twitter">godsfavourodom</h5>
@@ -35,7 +35,7 @@ function App() {
           {links.map((link) => {
             const { id, name, pageId, url } = link;
             return (
-              <a href={url} id={pageId} className="btn" key={id}>
+              <a href={url} id={pageId} className="btn" key={id} target='_blank' rel="noreferrer">
                 {name}
               </a>
             );
@@ -44,10 +44,14 @@ function App() {
         <div className="mid-section">
           <div className="inner">
             <div className="social-box">
-              <img src={slack} alt="" />
+              <a href="#empty" target='_blank' rel="noreferrer">
+                <img src={slack} alt="slack link" />
+              </a>
             </div>
             <div className="">
-              <img src={git} alt="" />
+              <a href="https://github.com/odomfavour" target='_blank' rel="noreferrer">
+                <img src={git} alt="github link" />
+              </a>
             </div>
           </div>
         </div>
