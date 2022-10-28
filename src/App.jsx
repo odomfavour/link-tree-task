@@ -33,9 +33,9 @@ function App() {
         </div>
         <div className="links-section">
           {links.map((link) => {
-            const { id, name, pageId, url } = link;
+            const { id, name, pageId, url, title } = link;
             return (
-              <a href={url} id={pageId} className="btn" key={id} target='_blank' rel="noreferrer">
+              <a href={url} id={pageId} className="btn" key={id} title={title} target='_blank' rel="noreferrer">
                 {name}
               </a>
             );
