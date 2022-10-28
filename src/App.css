@@ -1,38 +1,125 @@
-.App {
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.share-holder {
+  display: flex;
+  justify-content: flex-end;
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+.image-box img {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.image-box {
+  margin-bottom: 25px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.btn {
+  background: #eaecf0;
+  border: 1px solid #eaecf0;
+  border-radius: 8px;
+  padding: 24px 32px;
+  width: 100%;
+  display: block;
+  text-align: center;
+  color: #101828;
+  font-size: 18px;
+  text-decoration: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  margin-bottom: 40px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+footer {
+  padding: 50px 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.footer-inner {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  border-top: 1px solid #eaecf0;
+}
+
+.footer-inner p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #667085;
+}
+
+.user-info h5 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #101828;
+  margin-bottom: 60px;
+}
+
+.view-mobile {
+  display: none;
+}
+
+#slack {
+  display: none;
+}
+
+.mid-section {
+  margin: 0 0 22px 0;
+  text-align: center;
+  padding: 24px 0;
+}
+
+.mid-section .inner {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.mid-section .social-box {
+  margin-right: 24px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 426px) {
+  .user-info h5 {
+    font-size: 18px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .share-holder {
+    width: 100%;
+  }
+
+  .view-desktop {
+    display: none;
+  }
+
+  .view-mobile {
+    display: block;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 30px;
   }
 }
