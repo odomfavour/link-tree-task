@@ -6,6 +6,7 @@ import slack from "../images/slack.png";
 import git from "../images/git.png";
 import { links } from "../appData";
 import Footer from '../components/Footer/Footer';
+// import { Link } from 'react-router-dom';
 
 const Index = () => {
   return (
