@@ -41,4 +41,11 @@ export const links = [
     name: "Design Books",
     title: "The HNG Design Rules Book gives you the tips & guidelines you need to create truly professional designs, by addressing errors that could you get you disqualified."
   },
+  {
+    id: 7,
+    url: "/contact",
+    pageId: "contact",
+    name: "Contact",
+    title: "Redirects to the contact page"
+  },
 ];
