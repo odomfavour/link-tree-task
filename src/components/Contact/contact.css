@@ -17,10 +17,6 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
-  /* identical to box height, or 143% */
-
-  /* Gray/700 */
-
   color: #344054;
 }
 
@@ -139,6 +135,10 @@
 }
 
 @media (max-width: 426px) {
+  .contact-box .section-p {
+    font-size: 18px;
+  }
+  
   .contact-box {
     width: 85%;
   }
