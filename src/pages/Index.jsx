@@ -39,7 +39,7 @@ const Index = () => {
               </a>
             );
           })}
-          <Link to='/contact' className='btn'>Contact Me</Link>
+          <Link to='/contact' className='btn' id="contact" title="redirects to the contact page">Contact Me</Link>
         </div>
         <div className="mid-section">
           <div className="inner">
