@@ -19,10 +19,9 @@ const ContactForm = () => {
     setIsSubmit(true);
     setIsSuccess(true);
     
-  
 
     setTimeout(() => {
-        //   setFormValues({ firstname: "", lastname: "", email: "", message: "" });
+   
       setIsSuccess(false);
     }, 2000);
   };
@@ -32,18 +31,19 @@ const ContactForm = () => {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
     if (!values.firstname) {
       errors.firstname = "Please enter your firstname";
-    }
-    if (!values.lastname) {
+    } else if (!values.lastname) {
       errors.lastname = "Please enter your lastname";
     }
-    if (!values.email) {
+     else if (!values.email) {
       errors.email = "Please enter your email";
     }
-    if (!regex.test(values.email)) {
+    else if (!regex.test(values.email)) {
       errors.email = "This is not a valid email format";
     }
-    if (!values.message) {
+    else if (!values.message) {
       errors.message = "Please enter a message";
+    } else {
+             setFormValues({ firstname: "", lastname: "", email: "", message: "" });
     }
 
     return errors;
@@ -56,7 +56,7 @@ const ContactForm = () => {
   }, [formErrors, isSubmit, formValues]);
 
   useEffect(() => {
-    setSlackName("Ogochukw Odom");
+    setSlackName("Ogochukwu Odom");
   }, []);
 
   return (

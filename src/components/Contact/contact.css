@@ -79,6 +79,7 @@
 .input-box textarea {
   min-height: 132px;
   padding: 12px 14px;
+  resize: none;
 }
 
 .input-box {
