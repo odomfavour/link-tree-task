@@ -22,7 +22,7 @@ const ContactForm = () => {
   
 
     setTimeout(() => {
-          setFormValues({ firstname: "", lastname: "", email: "", message: "" });
+        //   setFormValues({ firstname: "", lastname: "", email: "", message: "" });
       setIsSuccess(false);
     }, 2000);
   };
